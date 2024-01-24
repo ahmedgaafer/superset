@@ -50,12 +50,15 @@ You can read the original docs from [HERE](./ORIGINALREADME.md)
   ```
  
 TO OPEN THE SERVER AGAIN AFTER INIT INSTALLATION YOU HAVE TO ACTIVATE ENV AND RUN THE START COMMAND ONLY:
-    ```bash
-    .your_env_name\Scripts\activate
-    ```
-    ```bash
-    superset run -p 8088 --with-threads --reload --debugger --debug
-    ```
+
+```bash
+.your_env_name\Scripts\activate
+```
+
+
+```bash
+superset run -p 8088 --with-threads --reload --debugger --debug
+```
  
 
 
@@ -77,12 +80,13 @@ TO OPEN THE SERVER AGAIN AFTER INIT INSTALLATION YOU HAVE TO ACTIVATE ENV AND RU
     ```bash
     npm run dev-server
     ```
-- open localhost:8000
+- open [front-end](http://localhost:9000/)
 
 
 # Styling Notes
  - there are some ant classes that you need to add styles to in the code
  - Always find the correct place to add styles.
-
+ - To change theme go to [config.py](./superset/config.py) line 580
+ - All most all chart settings are in [HERE](./superset-frontend/plugins/)
 
 

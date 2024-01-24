@@ -181,7 +181,7 @@ SQLALCHEMY_TRACK_MODIFICATIONS = False
 # or use `SUPERSET_SECRET_KEY` environment variable.
 # Use a strong complex alphanumeric string and use a tool to help you generate
 # a sufficiently random sequence, ex: openssl rand -base64 42"
-SECRET_KEY = os.environ.get("SUPERSET_SECRET_KEY") or CHANGE_ME_SECRET_KEY
+SECRET_KEY = "@SECRET#123"
 
 # The SQLAlchemy connection string.
 SQLALCHEMY_DATABASE_URI = (
@@ -577,22 +577,22 @@ EXTRA_CATEGORICAL_COLOR_SCHEMES: list[dict[str, Any]] = []
 
 # THEME_OVERRIDES is used for adding custom theme to superset
 # example code for "My theme" custom scheme
-# THEME_OVERRIDES = {
-#   "borderRadius": 4,
-#   "colors": {
-#     "primary": {
-#       "base": 'red',
-#     },
-#     "secondary": {
-#       "base": 'green',
-#     },
-#     "grayscale": {
-#       "base": 'orange',
-#     }
-#   }
-# }
+THEME_OVERRIDES = {
+  "borderRadius": 4,
+  "colors": {
+    "primary": {
+      "base": 'red',
+    },
+    "secondary": {
+      "base": 'green',
+    },
+    "grayscale": {
+      "base": 'orange',
+    }
+  }
+}
 
-THEME_OVERRIDES: dict[str, Any] = {}
+#THEME_OVERRIDES: dict[str, Any] = {}
 
 # EXTRA_SEQUENTIAL_COLOR_SCHEMES is used for adding custom sequential color schemes
 # EXTRA_SEQUENTIAL_COLOR_SCHEMES =  [
